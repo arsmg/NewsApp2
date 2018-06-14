@@ -1,65 +1,76 @@
 package com.example.android.newsapp;
+
 import java.util.Date;
 
 public class News {
 
-        /** Magnitude of the earthquake */
-        private String mTitle;
+    /**
+     * Titlw
+     */
+    private String mTitle;
 
-        /** Location of the earthquake */
-        private String mAuthor;
+    /**
+     * Author
+     */
+    private String mAuthor;
 
-        /** Time of the earthquake */
-        private String mSelection;
+    /**
+     * Section
+     */
+    private String mSelection;
 
-        private String mTimeInMilliseconds;
+    private String mTimeInMilliseconds;
 
-        /** Website URL of the news */
-        private String mUrl;
+    /**
+     * Website URL of the news
+     */
+    private String mUrl;
 
-        /**
-         * Constructs a new {@link News} object.
-         */
+    /**
+     * Constructs a new {@link News} object.
+     */
 
-        public News (String title, String author, String selection, String timeInMilliseconds, String url) {
-            mTitle = title;
-            mAuthor = author;
-            mSelection = selection;
-            mTimeInMilliseconds = timeInMilliseconds;
-            mUrl = url;
-        }
+    public News(String title, String author, String selection, String timeInMilliseconds, String url) {
+        mTitle = title;
+        mAuthor = author;
+        mSelection = selection;
+        mTimeInMilliseconds = timeInMilliseconds;
+        mUrl = url;
+    }
 
-        /**
-         * Returns the title.
-         */
-        public String getTitle() {
-            return mTitle;
-        }
+    /**
+     * Returns the title.
+     */
+    public String getTitle() {
+        return mTitle;
+    }
 
-        /**
-         * Returns the name of the author.
-         */
-        public String getAuthor() {
-            return mAuthor;
-        }
+    /**
+     * Returns the name of the author.
+     */
+    public String getAuthor() {
+        return mAuthor;
+    }
 
     /**
      * Returns the selection
      */
-        public String getSelection(){return mSelection;}
+    public String getSelection() {
+        return mSelection;
+    }
 
     /**
      * Returns the time of the news.
-         */
-        public String getTimeInMilliseconds() {
-            return mTimeInMilliseconds;
-        }
-
-        /**
-         * Returns the website URL to find more information about the earthquake.
-         */
-        public String getUrl() {
-            return mUrl;
-        }
+     */
+    public String getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
+
+    /**
+     * Returns the website URL to find more information.
+     */
+    public String getUrl() {
+        return mUrl;
+    }
+}
 

@@ -20,7 +20,7 @@ public class NewsAdapter extends ArrayAdapter<News> {
         }
 
         /**
-         * Returns a list item view that displays information about the earthquake at the given position
+         * Returns a list item view that displays information about the news at the given position
          * in the list of news.
          */
         @Override
@@ -33,28 +33,28 @@ public class NewsAdapter extends ArrayAdapter<News> {
                         R.layout.news_list_item, parent, false);
             }
 
-            // Find the title at the given position in the list of earthquakes
+            // Find the title at the given position in the list of news
             News currentNews = getItem(position);
 
             // Find the TextView with view ID title
             TextView titleView = listItemView.findViewById(R.id.title);
-            // Display the magnitude of the current earthquake in that TextView
+            // Display the magnitude of the current news in that TextView
             titleView.setText(currentNews.getTitle());
 
 
             // Find the TextView with view ID author
             TextView authorView = listItemView.findViewById(R.id.Author);
-            // Display the location of the current earthquake in that TextView
+            // Display the location of the current news in that TextView
             authorView.setText(currentNews.getAuthor());
 
             // Find the TextView with view ID selection
             TextView selectionView = listItemView.findViewById(R.id.selection);
-            // Display the location offset of the current earthquake in that TextView
+            // Display the location offset of the current news in that TextView
             selectionView.setText(currentNews.getSelection());
 
             // Find the TextView with view ID date
             TextView dateView = (TextView) listItemView.findViewById(R.id.date);
-            // Display the date of the current earthquake in that TextView
+            // Display the date of the current news in that TextView
             dateView.setText(currentNews.getTimeInMilliseconds());
 
 
